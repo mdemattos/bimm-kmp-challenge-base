@@ -6,7 +6,7 @@ import com.bimm.takehomeassignmnent.domain.repository.SakeShopRepository
 class GetSakeShopByIdUseCase(
     private val repository: SakeShopRepository
 ) {
-    suspend operator fun invoke(id: String): Result<SakeShop?> {
-        return repository.getSakeShopById(id)
+    suspend operator fun invoke(id: String): SakeShop? {
+        return repository.getSakeShopById(id).getOrThrow()
     }
 }
