@@ -136,10 +136,8 @@ Shop data comes from a curated JSON file (`sakeshop.json`) containing real sake 
 ## Future Improvements
 
 - Add network data source for real-time shop information
-- Implement favorites functionality with local persistence  
-- Add shop photos and user reviews
-- Include turn-by-turn navigation integration
-- Support multiple regions beyond Nagano
+- Implement local persistence (using Room or SQLDelight)
+- Implement default use Shop Image to load by default on Android
 
 ---
 
