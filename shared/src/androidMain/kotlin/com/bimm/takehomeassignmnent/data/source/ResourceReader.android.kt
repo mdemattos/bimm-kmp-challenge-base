@@ -4,8 +4,12 @@ import android.content.Context
 
 actual class ResourceReader(private val context: Context) {
     actual fun readText(fileName: String): String {
-        return context.assets.open(fileName).bufferedReader().use { 
-            it.readText() 
+        return try {
+            context.assets.open(fileName).bufferedReader().use { 
+                it.readText() 
+            }
+        } catch (e: Exception) {
+            throw RuntimeException("Failed to read file: $fileName. Error: ${e.message}", e)
         }
     }
 }
