@@ -2,6 +2,10 @@
 
 A Kotlin Multiplatform Mobile app that helps users discover local sake shops. Built with KMP to share business logic between Android and iOS while maintaining native UI experiences.
 
+# Running the app
+
+You can [download the Android APK](https://drive.google.com/file/d/1ZbrvfVifwbOUponqYnbuJ6h7iSVqhNUg/view?usp=drive_link) from Google Drive.
+
 ## Architecture Overview
 
 This project follows Clean Architecture principles with a clear separation of concerns across multiple layers. Here's how it's structured:
